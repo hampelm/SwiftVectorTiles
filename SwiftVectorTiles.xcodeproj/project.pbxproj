@@ -17,7 +17,11 @@
 		5056E5149162B767E8A56F1F /* MadGeometryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056ED9D8D1EBA80774C4BCC /* MadGeometryFactory.swift */; };
 		5056E6F3A223E5D7BF0FF2D4 /* MadGeometryTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056EC06C036A4C83627558C /* MadGeometryTransformTests.swift */; };
 		5056E7F8331A2AD57D63354F /* MadGeometryCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5056E877245EF924E8D350C4 /* MadGeometryCollection.swift */; };
+		7A1DD0C2998CD6F74B16BA18 /* Pods_SwiftVectorTilesMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6371520C13D30A1EDF044FEF /* Pods_SwiftVectorTilesMac.framework */; };
 		893C02B408652E42F6F579AF /* Pods_SwiftVectorTiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AA4BF2E5A4FFAE2FF08D56 /* Pods_SwiftVectorTiles.framework */; };
+		B9776652202EA806004F867D /* SwiftVectorTilesMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9776649202EA806004F867D /* SwiftVectorTilesMac.framework */; };
+		B9776657202EA806004F867D /* SwiftVectorTilesMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9776656202EA806004F867D /* SwiftVectorTilesMacTests.swift */; };
+		B9776659202EA807004F867D /* SwiftVectorTilesMac.h in Headers */ = {isa = PBXBuildFile; fileRef = B977664B202EA806004F867D /* SwiftVectorTilesMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D036DA061E2E74EE0049137A /* SwiftVectorTiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D036D9FC1E2E74EE0049137A /* SwiftVectorTiles.framework */; };
 		D036DA0B1E2E74EE0049137A /* SwiftVectorTilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036DA0A1E2E74EE0049137A /* SwiftVectorTilesTests.swift */; };
 		D036DA0D1E2E74EE0049137A /* SwiftVectorTiles.h in Headers */ = {isa = PBXBuildFile; fileRef = D036D9FF1E2E74EE0049137A /* SwiftVectorTiles.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B9776653202EA806004F867D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D036D9F31E2E74EE0049137A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9776648202EA806004F867D;
+			remoteInfo = SwiftVectorTilesMac;
+		};
 		D036DA071E2E74EE0049137A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D036D9F31E2E74EE0049137A /* Project object */;
@@ -45,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19843C32C5DB8A3C3297F472 /* Pods-SwiftVectorTilesMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVectorTilesMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVectorTilesMac/Pods-SwiftVectorTilesMac.release.xcconfig"; sourceTree = "<group>"; };
+		20AD45836C1A2CB14238A1F9 /* Pods-SwiftVectorTilesMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVectorTilesMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVectorTilesMac/Pods-SwiftVectorTilesMac.debug.xcconfig"; sourceTree = "<group>"; };
 		26244477B99D2FADEAF7697B /* Pods-SwiftVectorTiles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVectorTiles.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVectorTiles/Pods-SwiftVectorTiles.release.xcconfig"; sourceTree = "<group>"; };
 		2672C0BA08C4FB9EB70F99A7 /* MadMultiGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadMultiGeometry.swift; sourceTree = "<group>"; };
 		2672C282A752B4E792DECC72 /* MadGeometryTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadGeometryTypeTests.swift; sourceTree = "<group>"; };
@@ -58,7 +71,14 @@
 		5056EC06C036A4C83627558C /* MadGeometryTransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadGeometryTransformTests.swift; sourceTree = "<group>"; };
 		5056ED9D8D1EBA80774C4BCC /* MadGeometryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadGeometryFactory.swift; sourceTree = "<group>"; };
 		5C68D2958B4C3DA142177BF9 /* Pods-SwiftVectorTilesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVectorTilesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVectorTilesTests/Pods-SwiftVectorTilesTests.release.xcconfig"; sourceTree = "<group>"; };
+		6371520C13D30A1EDF044FEF /* Pods_SwiftVectorTilesMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftVectorTilesMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AA4BF2E5A4FFAE2FF08D56 /* Pods_SwiftVectorTiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftVectorTiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9776649202EA806004F867D /* SwiftVectorTilesMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftVectorTilesMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B977664B202EA806004F867D /* SwiftVectorTilesMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftVectorTilesMac.h; sourceTree = "<group>"; };
+		B977664C202EA806004F867D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9776651202EA806004F867D /* SwiftVectorTilesMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftVectorTilesMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9776656202EA806004F867D /* SwiftVectorTilesMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVectorTilesMacTests.swift; sourceTree = "<group>"; };
+		B9776658202EA806004F867D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D036D9FC1E2E74EE0049137A /* SwiftVectorTiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftVectorTiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D036D9FF1E2E74EE0049137A /* SwiftVectorTiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftVectorTiles.h; sourceTree = "<group>"; };
 		D036DA001E2E74EE0049137A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +100,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B9776645202EA806004F867D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1DD0C2998CD6F74B16BA18 /* Pods_SwiftVectorTilesMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B977664E202EA806004F867D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9776652202EA806004F867D /* SwiftVectorTilesMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D036D9F81E2E74EE0049137A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,11 +136,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B977664A202EA806004F867D /* SwiftVectorTilesMac */ = {
+			isa = PBXGroup;
+			children = (
+				B977664B202EA806004F867D /* SwiftVectorTilesMac.h */,
+				B977664C202EA806004F867D /* Info.plist */,
+			);
+			path = SwiftVectorTilesMac;
+			sourceTree = "<group>";
+		};
+		B9776655202EA806004F867D /* SwiftVectorTilesMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9776656202EA806004F867D /* SwiftVectorTilesMacTests.swift */,
+				B9776658202EA806004F867D /* Info.plist */,
+			);
+			path = SwiftVectorTilesMacTests;
+			sourceTree = "<group>";
+		};
 		D036D9F21E2E74EE0049137A = {
 			isa = PBXGroup;
 			children = (
 				D036D9FE1E2E74EE0049137A /* SwiftVectorTiles */,
 				D036DA091E2E74EE0049137A /* SwiftVectorTilesTests */,
+				B977664A202EA806004F867D /* SwiftVectorTilesMac */,
+				B9776655202EA806004F867D /* SwiftVectorTilesMacTests */,
 				D036D9FD1E2E74EE0049137A /* Products */,
 				E4B5656222D14B00F4F90C1C /* Pods */,
 				D83D56851BCC745FDADAC40F /* Frameworks */,
@@ -116,6 +172,8 @@
 			children = (
 				D036D9FC1E2E74EE0049137A /* SwiftVectorTiles.framework */,
 				D036DA051E2E74EE0049137A /* SwiftVectorTilesTests.xctest */,
+				B9776649202EA806004F867D /* SwiftVectorTilesMac.framework */,
+				B9776651202EA806004F867D /* SwiftVectorTilesMacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +229,7 @@
 			children = (
 				89AA4BF2E5A4FFAE2FF08D56 /* Pods_SwiftVectorTiles.framework */,
 				E4359B53C1EC439531FFFAD2 /* Pods_SwiftVectorTilesTests.framework */,
+				6371520C13D30A1EDF044FEF /* Pods_SwiftVectorTilesMac.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,6 +241,8 @@
 				26244477B99D2FADEAF7697B /* Pods-SwiftVectorTiles.release.xcconfig */,
 				E476AEF0C8A6422954277502 /* Pods-SwiftVectorTilesTests.debug.xcconfig */,
 				5C68D2958B4C3DA142177BF9 /* Pods-SwiftVectorTilesTests.release.xcconfig */,
+				20AD45836C1A2CB14238A1F9 /* Pods-SwiftVectorTilesMac.debug.xcconfig */,
+				19843C32C5DB8A3C3297F472 /* Pods-SwiftVectorTilesMac.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -189,6 +250,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		B9776646202EA806004F867D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9776659202EA807004F867D /* SwiftVectorTilesMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D036D9F91E2E74EE0049137A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +269,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B9776648202EA806004F867D /* SwiftVectorTilesMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B977665E202EA807004F867D /* Build configuration list for PBXNativeTarget "SwiftVectorTilesMac" */;
+			buildPhases = (
+				89D92EDA139668A28C2A813B /* [CP] Check Pods Manifest.lock */,
+				B9776644202EA806004F867D /* Sources */,
+				B9776645202EA806004F867D /* Frameworks */,
+				B9776646202EA806004F867D /* Headers */,
+				B9776647202EA806004F867D /* Resources */,
+				FC15A91C977A2DC111A4124D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftVectorTilesMac;
+			productName = SwiftVectorTilesMac;
+			productReference = B9776649202EA806004F867D /* SwiftVectorTilesMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B9776650202EA806004F867D /* SwiftVectorTilesMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B977665F202EA807004F867D /* Build configuration list for PBXNativeTarget "SwiftVectorTilesMacTests" */;
+			buildPhases = (
+				B977664D202EA806004F867D /* Sources */,
+				B977664E202EA806004F867D /* Frameworks */,
+				B977664F202EA806004F867D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9776654202EA806004F867D /* PBXTargetDependency */,
+			);
+			name = SwiftVectorTilesMacTests;
+			productName = SwiftVectorTilesMacTests;
+			productReference = B9776651202EA806004F867D /* SwiftVectorTilesMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D036D9FB1E2E74EE0049137A /* SwiftVectorTiles */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D036DA101E2E74EE0049137A /* Build configuration list for PBXNativeTarget "SwiftVectorTiles" */;
@@ -247,10 +354,18 @@
 		D036D9F31E2E74EE0049137A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "William Kamp";
 				TargetAttributes = {
+					B9776648202EA806004F867D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B9776650202EA806004F867D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					D036D9FB1E2E74EE0049137A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TH39V46468;
@@ -278,11 +393,27 @@
 			targets = (
 				D036D9FB1E2E74EE0049137A /* SwiftVectorTiles */,
 				D036DA041E2E74EE0049137A /* SwiftVectorTilesTests */,
+				B9776648202EA806004F867D /* SwiftVectorTilesMac */,
+				B9776650202EA806004F867D /* SwiftVectorTilesMacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B9776647202EA806004F867D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B977664F202EA806004F867D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D036D9FA1E2E74EE0049137A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,13 +437,34 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftVectorTiles-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89D92EDA139668A28C2A813B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftVectorTilesMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C94436088C963109DF54ABDA /* [CP] Check Pods Manifest.lock */ = {
@@ -321,13 +473,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftVectorTilesTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CECA573CF2C90D3509DDC973 /* [CP] Embed Pods Frameworks */ = {
@@ -336,9 +491,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftVectorTilesTests/Pods-SwiftVectorTilesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift-iOS/ProtocolBuffers.framework",
+				"${BUILT_PRODUCTS_DIR}/geos-iOS/geos.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/geos.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,9 +535,39 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftVectorTilesTests/Pods-SwiftVectorTilesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FC15A91C977A2DC111A4124D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftVectorTilesMac/Pods-SwiftVectorTilesMac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B9776644202EA806004F867D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B977664D202EA806004F867D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9776657202EA806004F867D /* SwiftVectorTilesMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D036D9F71E2E74EE0049137A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +606,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B9776654202EA806004F867D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9776648202EA806004F867D /* SwiftVectorTilesMac */;
+			targetProxy = B9776653202EA806004F867D /* PBXContainerItemProxy */;
+		};
 		D036DA081E2E74EE0049137A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D036D9FB1E2E74EE0049137A /* SwiftVectorTiles */;
@@ -424,6 +619,126 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B977665A202EA807004F867D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AD45836C1A2CB14238A1F9 /* Pods-SwiftVectorTilesMac.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftVectorTilesMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matth.SwiftVectorTilesMac.SwiftVectorTilesMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B977665B202EA807004F867D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19843C32C5DB8A3C3297F472 /* Pods-SwiftVectorTilesMac.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftVectorTilesMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matth.SwiftVectorTilesMac.SwiftVectorTilesMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		B977665C202EA807004F867D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftVectorTilesMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matth.SwiftVectorTilesMac.SwiftVectorTilesMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B977665D202EA807004F867D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftVectorTilesMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matth.SwiftVectorTilesMac.SwiftVectorTilesMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		D036DA0E1E2E74EE0049137A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -603,6 +918,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B977665E202EA807004F867D /* Build configuration list for PBXNativeTarget "SwiftVectorTilesMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B977665A202EA807004F867D /* Debug */,
+				B977665B202EA807004F867D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B977665F202EA807004F867D /* Build configuration list for PBXNativeTarget "SwiftVectorTilesMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B977665C202EA807004F867D /* Debug */,
+				B977665D202EA807004F867D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D036D9F61E2E74EE0049137A /* Build configuration list for PBXProject "SwiftVectorTiles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -5,10 +5,16 @@ use_frameworks!
 
 target 'SwiftVectorTiles' do
   pod 'geos'
-  pod 'ProtocolBuffers-Swift'
+  pod 'ProtocolBuffers-Swift', '4.0.1'
+end
+
+target 'SwiftVectorTilesMac' do
+  platform :osx, '10.13'
+  pod 'geos'
+  pod 'ProtocolBuffers-Swift', '4.0.1'
 end
 
 target 'SwiftVectorTilesTests' do
   pod 'geos'
-  pod 'ProtocolBuffers-Swift'
+  pod 'ProtocolBuffers-Swift', '4.0.1'
 end
