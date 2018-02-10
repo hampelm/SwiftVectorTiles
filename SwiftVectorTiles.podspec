@@ -11,7 +11,8 @@ DESC
   s.homepage     = "https://github.com/manimaul/GeosSwiftVectorTiles"
   s.license      = { :type => "BSD", :file => "LICENSE.md" }
   s.author       = { "Will Kamp" => "will@madrona.io" }
-  s.platform     = :ios, "8.0"
+  s.ios.deployment_target = "8.0"
+  s.osx.deployment_target = '10.13'
   s.source       = { :git => "https://github.com/manimaul/SwiftVectorTiles.git", :tag => s.version.to_s}
   s.subspec 'Core' do |cs|
       cs.source_files = 'SwiftVectorTiles/**/*.{swift,h}'
