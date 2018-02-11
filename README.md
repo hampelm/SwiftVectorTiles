@@ -1,16 +1,13 @@
-#SwiftVectorTiles
-A Swift encoder for vector tiles according to the [Mapbox vector tile spec](https://github.com/mapbox/vector-tile-spec)
+# SwiftVectorTiles
 
-###Acknowledgements
-* [Java Vector Tiles](https://github.com/ElectronicChartCentre/java-vector-tile)
-* [GEOS & JTS](https://trac.osgeo.org/geos/)
-* [Mapbox Vector Tile Spec](https://github.com/mapbox/vector-tile-spec)
-* [Swift Google Protocol Buffers](http://protobuf.io/#swift)
+A Swift encoder for vector tiles according to the
+[Mapbox vector tile spec](https://github.com/mapbox/vector-tile-spec) Beta -
+expect a few bugs
 
-###Status
-Beta - expect a few bugs
+## Install
 
-###Cocoapods
+### Cocoapods
+
 ```ruby
 use_frameworks!
 
@@ -19,10 +16,19 @@ target 'YourTarget' do
 end
 ```
 
-###Example
+### Development
+
+You'll also need to compile the protocol:
+
+```
+brew install protobuf protobuf-swift
+protoc --swift_out=. vector_tile.proto
+mv VectorTile.VectorTile.proto.swift ../SwiftVectorTiles/VectorTile.swift
+```
+
+### Generate
 
 ```swift
-
 // initialize an encoder
 let encoder = VectorTileEncoder()
 
@@ -38,11 +44,17 @@ encoder.addFeature(layerName: "land", attributes: atts, geometry: wkt)
 
 // encode to Mapbox vector tile
 let data :Data = encoder.encode()
-
 ```
 
 ###Screenshots
 
-| Encoded [Natural Earth Data](http://www.naturalearthdata.com/) geometries| |
-| --------------------------------------------- | ---------------------------------------- |
-|![](screenshots/shot1.png)|![](screenshots/shot2.png)|
+| Encoded [Natural Earth Data](http://www.naturalearthdata.com/) geometries |                            |
+| ------------------------------------------------------------------------- | -------------------------- |
+| ![](screenshots/shot1.png)                                                | ![](screenshots/shot2.png) |
+
+### Acknowledgements
+
+* [Java Vector Tiles](https://github.com/ElectronicChartCentre/java-vector-tile)
+* [GEOS & JTS](https://trac.osgeo.org/geos/)
+* [Mapbox Vector Tile Spec](https://github.com/mapbox/vector-tile-spec)
+* [Swift Google Protocol Buffers](http://protobuf.io/#swift)
