@@ -35,7 +35,7 @@ public enum ProtocolBuffersError: Error {
 public protocol ProtocolBuffersMessage:ProtocolBuffersMessageInit {
     var unknownFields:UnknownFieldSet{get}
     func serializedSize() -> Int32
-    func isInitialized() -> Bool
+    func isInitialized() throws
     func writeTo(codedOutputStream:CodedOutputStream) throws
     func writeTo(outputStream:OutputStream) throws
     func data() throws -> Data
@@ -53,7 +53,7 @@ public protocol ProtocolBuffersMessage:ProtocolBuffersMessageInit {
 public protocol ProtocolBuffersMessageBuilder {
      var unknownFields:UnknownFieldSet{get set}
      func clear() -> Self
-     func isInitialized()-> Bool
+     func isInitialized() throws
      func build() throws -> AbstractProtocolBuffersMessage
      func merge(unknownField:UnknownFieldSet) throws -> Self
      func mergeFrom(codedInputStream:CodedInputStream) throws ->  Self
@@ -67,6 +67,7 @@ public protocol ProtocolBuffersMessageBuilder {
     
     static func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Self
     static func fromJSONToBuilder(data:Data) throws -> Self
+    
 }
 
 public func == (lhs: AbstractProtocolBuffersMessage, rhs: AbstractProtocolBuffersMessage) -> Bool {
@@ -89,8 +90,7 @@ open class AbstractProtocolBuffersMessage:Hashable, ProtocolBuffersMessage {
         catch {}
         return Data(bytes: stream.buffer.buffer, count: Int(ser_size))
     }
-    open func isInitialized() -> Bool {
-        return false
+    open func isInitialized() throws {
     }
     open func serializedSize() -> Int32 {
         return 0
@@ -172,8 +172,7 @@ open class AbstractProtocolBuffersMessageBuilder:ProtocolBuffersMessageBuilder {
         return self
     }
     
-    open func isInitialized() -> Bool {
-        return false
+    open func isInitialized() throws {
     }
     @discardableResult
     open func mergeFrom(codedInputStream:CodedInputStream) throws ->  Self {
@@ -229,8 +228,7 @@ open class AbstractProtocolBuffersMessageBuilder:ProtocolBuffersMessageBuilder {
             return nil
         }
         let rSize = try CodedInputStream.readRawVarint32(firstByte: firstByte, inputStream: inputStream)
-        var data  = [UInt8](repeating: 0, count: Int(rSize))//Data(bytes: [0],count: Int(rSize))
-//        let pointer = UnsafeMutablePointerUInt8From(data: data)
+        var data  = [UInt8](repeating: 0, count: Int(rSize))
         _ = inputStream.read(&data, maxLength: Int(rSize))
         return try mergeFrom(data: Data(data))
     }
